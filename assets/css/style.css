@@ -2877,8 +2877,8 @@ p {
     .hero {
         min-height: auto;
         padding: 90px 20px 50px;
-        background-size: cover;
-        background-position: 65% center;
+        background-size: 100% auto;
+        background-position: top center;
         overflow-x: hidden;
     }
     
