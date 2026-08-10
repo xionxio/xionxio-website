@@ -1141,7 +1141,7 @@ p {
 }
 
 .footer-brand p {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.75);
     font-size: 0.9rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
@@ -1198,7 +1198,7 @@ p {
     gap: 0.75rem;
     margin-bottom: 1rem;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.78);
 }
 
 .footer-contact-icon {
@@ -3149,7 +3149,8 @@ p {
     }
     
     .certs-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .oem-grid {
