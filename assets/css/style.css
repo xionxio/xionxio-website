@@ -2875,7 +2875,7 @@ p {
     }
     
     .hero {
-        min-height: 500px;
+        min-height: auto;
         padding: 100px 0 60px;
         background-size: cover;
         background-position: center;
@@ -2899,8 +2899,12 @@ p {
     }
     
     .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        padding-top: 2rem;
     }
     
     .hero-stat h3 {
@@ -3067,6 +3071,7 @@ p {
     
     .hero-buttons {
         flex-direction: column;
+        gap: 12px;
     }
     
     .hero-buttons .btn {
