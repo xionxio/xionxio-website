@@ -2960,7 +2960,8 @@ p {
     }
     
     .certs-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.6rem;
     }
     
     .testimonials-grid {
@@ -3166,8 +3167,33 @@ p {
     }
     
     .certs-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.3rem;
+    }
+    
+    .cert-card {
+        padding: 0.5rem 0.15rem;
+    }
+    
+    .cert-icon {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+    
+    .cert-icon-img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .cert-card h4 {
+        font-size: 0.55rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .cert-card p {
+        font-size: 0.5rem;
     }
     
     .oem-grid {
