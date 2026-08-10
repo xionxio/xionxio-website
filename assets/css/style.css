@@ -3208,6 +3208,10 @@ p {
         width: 100%;
     }
     
+    .section-title h2 {
+        font-size: 1.3rem;
+    }
+    
     .applications-grid,
     .certifications-grid {
         grid-template-columns: 1fr;
