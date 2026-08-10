@@ -6,7 +6,7 @@
     <meta name="description" content="Professional health & wellness device product detail page. View specifications, features, certifications and request a quote.">
     <title>Product Detail | Health & Wellness Device - Guangxi Maikang</title>
     
-    <link rel="stylesheet" href="assets/css/style.css?v=14">
+    <link rel="stylesheet" href="assets/css/style.css?v=15">
     <link rel="icon" href="assets/images/logo.png">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6LMX9VR0Y"></script>
@@ -278,16 +278,6 @@
         </div>
     </section>
 
-    <!-- Related Products -->
-    <section class="related-products" style="padding: 60px 0; background: #f8f9fa;">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Related Products</h2>
-            <div class="products-grid" id="relatedProducts" style="grid-template-columns: repeat(3, 1fr);">
-                <!-- Will be populated by JS -->
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -470,39 +460,8 @@
                         thumbContainer.appendChild(div);
                     });
                     if (typeof initGalleryThumbnails === 'function') initGalleryThumbnails();
-                    // Re-render related products names
-                    var relatedCards = document.querySelectorAll('#relatedProducts .product-card h3');
-                    var related = productsData.filter(function(rp) { return rp.id != (p ? p.id : 0); }).slice(0, 3);
-                    relatedCards.forEach(function(h3, idx) {
-                        if (related[idx]) {
-                            h3.textContent = (typeof t === 'function' ? t(related[idx].nameKey) || related[idx].name : related[idx].name);
-                        }
-                    });
                 }
             });
-            
-            // Render related products (first 3)
-            const related = productsData.filter(p => p.id != productId).slice(0, 3);
-            const relatedHTML = related.map(p => `
-                <div class="product-card">
-                    <div class="product-image">
-                        ${p.badge ? '<span class="product-badge">' + p.badge + '</span>' : ''}
-                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" style="opacity: 0.2;">
-                            <rect x="25" y="20" width="50" height="60" rx="8" fill="#0a3d62"/>
-                            <circle cx="50" cy="50" r="15" fill="#00b894"/>
-                        </svg>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category-tag">${p.category}</span>
-                        <h3>${typeof t === 'function' ? (t(p.nameKey) || p.name) : p.name}</h3>
-                        <div class="product-footer">
-                            <span class="product-moq">MOQ: <strong>${p.moq}</strong></span>
-                            <a href="product-detail.html?id=${p.id}" class="btn btn-small btn-primary">View</a>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-            document.getElementById('relatedProducts').innerHTML = relatedHTML;
         });
     </script>
 </body>
