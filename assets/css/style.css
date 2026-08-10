@@ -2875,8 +2875,10 @@ p {
     }
     
     .hero {
-        min-height: auto;
+        min-height: 500px;
         padding: 100px 0 60px;
+        background-size: cover;
+        background-position: center;
     }
     
     .hero-content {
@@ -3077,14 +3079,6 @@ p {
         font-size: 1.4rem;
         bottom: 20px;
         right: 20px;
-    }
-    
-    /* === Mobile Image Adaptation Fixes === */
-    
-    /* 1. Hero background — ensure proper scaling on narrow screens */
-    .hero {
-        background-size: cover;
-        background-position: center;
     }
     
     /* 2. Why Choose Us image — prevent overflow */
