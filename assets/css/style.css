@@ -2921,13 +2921,11 @@ p {
     }
     
     .advantages-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
     
     .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
     
     .factory-grid {
@@ -2992,8 +2990,7 @@ p {
     }
     
     .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
     
     .product-detail-layout {
