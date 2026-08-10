@@ -3078,6 +3078,49 @@ p {
         bottom: 20px;
         right: 20px;
     }
+    
+    /* === Mobile Image Adaptation Fixes === */
+    
+    /* 1. Hero background — ensure proper scaling on narrow screens */
+    .hero {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /* 2. Why Choose Us image — prevent overflow */
+    .why-choose-image img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+    
+    .why-choose-badge {
+        position: static;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    /* 3. Category card images — fixed aspect ratio + object-fit */
+    .category-image {
+        aspect-ratio: 4 / 3;
+    }
+    
+    .category-image .cat-img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* 4. Certification badge icons — prevent overflow */
+    .cert-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .cert-icon-img {
+        max-width: 100%;
+        height: auto;
+    }
     }
 
 @media (max-width: 480px) {
