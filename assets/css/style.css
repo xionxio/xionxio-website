@@ -2876,9 +2876,10 @@ p {
     
     .hero {
         min-height: auto;
-        padding: 100px 0 60px;
+        padding: 90px 20px 50px;
         background-size: cover;
-        background-position: center;
+        background-position: 65% center;
+        overflow-x: hidden;
     }
     
     .hero-content {
@@ -2887,11 +2888,14 @@ p {
     }
     
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.25;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
     }
     
     .hero-image {
@@ -2901,14 +2905,14 @@ p {
     .hero-stats {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        margin-top: 2.5rem;
+        gap: 1.2rem;
+        margin-top: 1.8rem;
         border-top: 1px solid rgba(0,0,0,0.1);
-        padding-top: 2rem;
+        padding-top: 1.5rem;
     }
     
     .hero-stat h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .trust-bar-inner {
@@ -3128,7 +3132,19 @@ p {
     }
     
     .hero h1 {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+    }
+    
+    .hero-stat h3 {
+        font-size: 1.3rem;
     }
     
     .certs-grid {
