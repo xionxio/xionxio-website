@@ -557,7 +557,7 @@ function renderSettings(container) {
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="email" id="companyEmail" value="${settings.email || 'sales@xionxio.com'}" placeholder="Email address">
+                        <input type="email" id="companyEmail" value="${settings.email || 'xionxio.official@gmail.com'}" placeholder="Email address">
                     </div>
                     <div class="form-group">
                         <label>Phone</label>
