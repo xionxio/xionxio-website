@@ -1,0 +1,5 @@
+/* XIONXIO navigation typography — keep the six primary links deliberately more prominent than auxiliary header text. */
+.desktop-nav.desktop-nav-pro{gap:clamp(17px,1.9vw,28px)}
+.desktop-nav.desktop-nav-pro a{font-size:12px;letter-spacing:.005em}
+@media (min-width:901px) and (max-width:980px){.desktop-nav.desktop-nav-pro{gap:16px}.desktop-nav.desktop-nav-pro a{font-size:11px}}
+@media (max-width:900px){.mobile-panel-pro a:not(.mobile-cta){font-size:17px;letter-spacing:.005em}}

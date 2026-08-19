@@ -1,0 +1,55 @@
+/* Clinical Instrument Atlas — a measured typography lift for the fixed utility bar and six-item XIONXIO navigation. */
+html body .file-rail { display: none !important; }
+html body[data-page="home"] .m-sticky { display: none !important; }
+
+html body .pa-narrative { padding-top: clamp(48px, 5vw, 72px); }
+
+html body .site-note.site-note-pro {
+  min-height: 34px !important;
+  font-size: 9px !important;
+  letter-spacing: .08em !important;
+}
+
+html body .site-note-pro .note-action {
+  min-height: 34px !important;
+  font-size: 9px !important;
+  letter-spacing: .055em !important;
+}
+
+html body .site-note-pro .note-action b { font-size: 13px !important; }
+
+html body .site-header.site-header-pro { height: 76px !important; }
+
+html body .desktop-nav.desktop-nav-pro {
+  gap: clamp(19px, 2vw, 30px) !important;
+}
+
+html body .desktop-nav.desktop-nav-pro a {
+  font-size: 13px !important;
+  letter-spacing: .007em !important;
+}
+
+html body .site-header-pro .header-cta {
+  min-height: 42px !important;
+  padding: 10px 14px !important;
+  font-size: 9px !important;
+}
+
+@media (min-width: 901px) and (max-width: 1080px) {
+  html body .desktop-nav.desktop-nav-pro { gap: 15px !important; }
+  html body .desktop-nav.desktop-nav-pro a { font-size: 11.5px !important; }
+}
+
+@media (max-width: 900px) {
+  html body .site-note.site-note-pro,
+  html body .site-note-pro .note-action {
+    min-height: 35px !important;
+    font-size: 8px !important;
+  }
+
+  html body .mobile-panel-pro a:not(.mobile-cta) { font-size: 18px !important; }
+}
+
+@media (max-width: 540px) {
+  html body .site-note-pro .note-action { padding-left: 12px !important; }
+}

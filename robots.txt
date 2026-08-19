@@ -1,16 +1,3 @@
-# Robots.txt for NebuMedPro Medical Nebulizer Website
-# https://www.medicalnebulizer.com
-
 User-agent: *
 Allow: /
-
-# Disallow admin panel
-Disallow: /admin.html
-
-# Disallow internal assets (optional, but good practice)
-# Allow: /assets/css/
-# Allow: /assets/js/
-# Allow: /assets/images/
-
-# Sitemap
-Sitemap: https://www.medicalnebulizer.com/sitemap.xml
+Sitemap: https://www.your-domain.com/sitemap.xml

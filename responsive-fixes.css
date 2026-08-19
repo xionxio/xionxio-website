@@ -1,0 +1,18 @@
+/* Responsive visual corrections — pure CSS, loaded by native script on every page. */
+@media (max-width: 780px) {
+  body { padding-bottom: 58px; }
+  .site-note { min-height: 34px; padding: 7px 16px; }
+  .site-note span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 8px; }
+  .site-note a { display: none; }
+  .m-hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 25px; border-top: 1px solid #aec9ce; }
+  .m-hero-meta span { padding: 8px 8px 8px 0; border: 0; border-bottom: 1px solid #aec9ce; line-height: 1.4; }
+  .m-hero-meta span:last-child { padding-left: 8px; }
+  .m-sticky { left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; padding: 6px 8px; background: rgba(247,250,250,.94); box-shadow: 0 -7px 22px rgba(16,44,61,.12); backdrop-filter: blur(10px); }
+  .m-sticky a { min-height: 38px; padding: 8px 4px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 7px; box-shadow: none; }
+  .m-process[style] { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 480px) {
+  .m-hero-meta { grid-template-columns: 1fr; }
+  .m-hero-meta span:last-child { padding-left: 0; }
+  .m-process[style] { grid-template-columns: 1fr !important; }
+}
